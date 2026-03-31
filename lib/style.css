@@ -1,0 +1,126 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #efefef;
+    font-family: monospace;
+}
+
+.page-title {
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    color: coral;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.todos-form {
+    padding: 2rem 2rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+input#todo-input {
+    height: 4rem;
+    width: 100%;
+    border-radius: 0.3rem;
+    border: 1px solid #efefef;
+    outline: none;
+    padding: 0.7rem 0.8rem;
+    text-align: center;
+    box-shadow: none;
+    font-size: 1.6rem;
+    color: #000;
+    margin: 0;
+}
+
+form#todo-form button {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    padding: 0;
+    border: 0;
+}
+
+.todos-list ul {
+    padding: 0 2rem;
+    margin: 0;
+}
+
+ul#todos-list li {
+    list-style: none;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 4rem;
+    background: #fff;
+    border-radius: 0.2rem;
+    padding: 0 1rem;
+}
+
+ul#todos-list li input {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid #000;
+    outline: none;
+    box-shadow: none;
+}
+
+.todos-left {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.todos-filters button {
+    font-size: 1.4rem;
+    border: 1px solid darkgray;
+    padding: 0.7rem 0.8rem;
+    border-radius: 0.2rem;
+}
+
+.todos-clear button {
+    font-size: 1.4rem;
+    border: 1px solid darkgray;
+    padding: 0.7rem 0.8rem;
+    border-radius: 0.2rem;
+}
+
+div#app {
+    max-width: 40rem;
+    margin: auto;
+}
+
+.todos-stats {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.todos-filters {
+    text-align: center;
+}
+
+.todos-clear {
+    text-align: center;
+}
+
+form#todo-form {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background: none;
+    margin-bottom: 0;
+}
+ul#todos-list li:not(:first-child) {
+    border-top: 1px solid #efefef;
+}
